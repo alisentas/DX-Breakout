@@ -1,0 +1,14 @@
+language: cpp
+dist: trusty
+compiler:
+- gcc
+os:
+- linux
+before_install:
+- echo $LANG
+before_script:
+- sudo add-apt-repository ppa:allegro/5.2 -y
+- sudo apt-get -qq update
+- sudo apt-get install liballegro5-dev -y
+script:
+- make
