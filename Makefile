@@ -11,6 +11,7 @@ LIB := $$(pkg-config --libs allegro-5 allegro_primitives-5 allegro_acodec-5 alle
 INC := -I include
 
 $(TARGET): $(OBJECTS)
+	@mkdir -p bin
 	@echo " Linking..."
 	@echo " $(CC) $^ -o $(TARGET) $(LIB)"; $(CC) $^ -o $(TARGET) $(LIB)
 
