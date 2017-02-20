@@ -1,5 +1,6 @@
 #include <iostream>
 #include "version.h"
+#include <stdio.h>
 #include <math.h>
 #include <vector>
 #include <algorithm>
